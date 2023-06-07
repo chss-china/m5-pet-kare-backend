@@ -1,6 +1,7 @@
 from django.db import models
 from groups.models import Group
 from traits.models import Trait
+
 class Sex_choices(models.TextChoices):
     MALE = "Male"
     FEMALE = "Female"
