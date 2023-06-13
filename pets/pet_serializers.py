@@ -2,10 +2,10 @@ from rest_framework import serializers
 from .models import Pet
 from groups.models import Group
 from traits.models import Trait
-#from .pet_serializers import PetSerializer
+
 from traits.trait_serializers import TraitSerializer
 from groups.group_serializers import GroupSerializer
-#from .models import Sex_choices
+
 from .models import models, Sex_choices
 
 print(Sex_choices)

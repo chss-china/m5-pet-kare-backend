@@ -75,8 +75,7 @@ class PetDetailView(APIView):
         group_data = serialized_pet.validated_data.pop("group",None)
         traits_data = serialized_pet.validated_data.pop("traits",None)
 
-        print(group_data)
-        print(traits_data)
+        
         
         if group_data:
             group_name = group_data["scientific_name"]
@@ -88,7 +87,7 @@ class PetDetailView(APIView):
             print(pet.group)
         
         if traits_data:
-            #trait_names = [trait["name"] for trait in trait_data]
+            
             array = []
             for trait in traits_data:
                 
